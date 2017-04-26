@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+/* some custom fonts via google font api */
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:extralight);
+/* content block 1 */
+.customScrollBox{position:relative; height:100%; overflow:hidden;}
+.customScrollBox .container{position:relative; width:500px; top:0; float:left;}
+.customScrollBox .content{clear:both;}
+.dragger_container{position:relative; width:6px; height:500px; float:left; margin-left:44px; background:url("images/mCustomScrollbar_dragger_container_bg.gif"); cursor:s-resize;}
+.dragger{position:absolute; width:6px; height:60px; background:#ffffff; text-align:center; line-height:60px; color:#ffffff; overflow:hidden; cursor:pointer;}
+.dragger_pressed{position:absolute; width:6px; height:60px; background:#ffffff; text-align:center; line-height:60px; color:#ffffff; overflow:hidden; cursor:s-resize;}
+.scrollUpBtn, .scrollDownBtn{position:absolute; display:inline-block; width:14px; height:15px; margin-right:12px; text-decoration:none; right:0; filter:alpha(opacity=20); -moz-opacity:0.20; -khtml-opacity:0.20; opacity:0.20;}
+.scrollUpBtn{top:16px; background:url(mcs_btnUp.png) center center no-repeat;}
+.scrollDownBtn{bottom:12px; background:url(mcs_btnDown.png) center center no-repeat;}
+.scrollUpBtn:hover, .scrollDownBtn:hover{filter:alpha(opacity=60); -moz-opacity:0.60; -khtml-opacity:0.60; opacity:0.60;}

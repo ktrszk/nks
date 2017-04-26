@@ -1,0 +1,216 @@
+@charset "utf-8";
+/**----------------------------------------------------------
+ *CSS information 
+ *
+ * file name	: base.css
+ * style info	:  基本設定、レイアウト、横幅設定など
+ -----------------------------------------------------------*/
+ 
+/*	基本設定、リンクカラーなど
+----------------------------------------------------*/
+body {
+	color: #333;
+	font-size: 12px;
+	font-family: "メイリオ","Meiryo",verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+	line-height: 1.8;
+	background: #fff;
+	width: 100%;
+	height:100%;
+}
+
+html:not(:target) body {
+	font-size: 12px;
+}
+
+* html body {	/* for IF6 */
+	font-family: "ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+	width: 100%;
+	height:100%;
+}
+
+input,textarea,select {
+	font-family:"メイリオ","Meiryo",verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+	font-size: 100%;
+}
+
+* html input,
+* html textarea,
+* html select {/* for IF6 */
+	font-family: "ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+}
+
+
+/*\*/
+* html body {
+	font-size: 75%;
+}
+* html table {
+	font-size: 100%;
+	line-height: 1.5;
+}
+*:first-child+html body {
+	font-size: 70%;
+}
+/**/
+th {
+	font-weight: normal;
+}
+
+/* link ---*/
+a:link {
+	color: #076334;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #333333;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #076334;
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+
+/*	汎用class
+----------------------------------------------------*/
+.imgR {
+	float: right;
+	margin: 0 0 1em 1em;
+}
+
+.imgL {
+	float: left;
+	margin: 0 1em 1em 0;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+/* even - odd */
+.even{}
+.odd{}
+
+/* :focus */
+.focus{}
+
+
+.separator {
+	background: transparent url('../img/bg_separator.gif');
+}
+
+hr.dot {
+	background: transparent url('../img/bg_hr.gif') repeat-x;
+	height: 1px;
+	margin: 10px 0;
+	border: 0;
+}
+
+/* レイアウト
+----------------------------------------------------*/
+.body {
+	clear: both;
+	text-align: left;
+	width: 960px;
+	margin: 0 auto;
+}
+
+
+/* #wrap
+----------------------------------------------------*/
+#wrap {
+	zoom: 1;
+}
+
+
+/* #contents
+----------------------------------------------------*/
+#contents {
+	background: #eaeaea url('../img/contents_bg.gif');
+}
+
+
+/* #main-column
+----------------------------------------------------*/
+#main-column {
+	float: left;
+	width: 740px;
+}
+
+
+/* #content
+----------------------------------------------------*/
+#content {
+	clear:both;
+	padding-bottom: 15px;
+}
+
+
+/* #header  ヘッダー
+----------------------------------------------------*/
+#header {
+	width: 100%;
+	height: 70px;
+	border-bottom: solid 2px #076334;
+	position: absolute;
+	z-index: 999;
+	background: #ffffff;
+}
+
+#header section{
+}
+
+#header h1 {
+	float: left;
+	width: 160px;
+}
+/* #gnavi  グローバルナビ
+----------------------------------------------------*/
+#gnavi {
+	float: left;
+}
+
+#gnavi li{
+	float: left;
+}
+
+#subnavi {
+	background:#076334 url('../img/subnavi_bg.jpg') repeat-x;	
+}
+
+
+/*#footer  フッター
+----------------------------------------------------*/
+#footer {
+	position: relative;
+	padding-bottom: 40px;
+}
+
+#footer .body {
+}
+
+#pagetop {
+	display: block;
+	background:#076334 url('../img/footer_bg_pagetop_off.gif') repeat-x;
+	height: 34px;
+	text-align:center;
+	min-width: 960px;
+}
+
+#footer .copyright {
+	float: left;
+}
+
+#privacy {
+	padding-top: 43px;
+}

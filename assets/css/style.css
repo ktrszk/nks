@@ -1,0 +1,252 @@
+@charset "utf-8";
+/**----------------------------------------------------------
+ *CSS information 
+ *
+ * file name	: extend.css
+ * style info	:  index.html用CSS
+ -----------------------------------------------------------*/
+@import url("../../common/css/import.css");
+@import url("../../common/css/colorbox.css");
+/* ---------------------------------------------------------*/
+
+body {
+}
+
+#contents {
+	position: relative;
+	min-width: 960px;
+	background: #000000 url('../img/bg_top.jpg') 50% 0px no-repeat;
+}
+
+#top_article {
+	position: relative;
+	z-index: 15;
+}
+
+#top_bg_item1 {
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 50%;
+}
+
+#top_bg_item2 {
+	position: absolute;
+	z-index: 9;
+	top: 0;
+	left: 50%;
+}
+
+#top_bg_item3 {
+	position: absolute;
+	z-index: 8;
+	top: 0;
+	left: 50%;
+}
+
+#top_bg_item4 {
+	position: absolute;
+	z-index: 7;
+	top: 0;
+	left: 50%;
+}
+
+#top_bg_item5 {
+	position: absolute;
+	z-index: 6;
+	top: 0;
+	left: 50%;
+}
+
+#top_bg_item6 {
+	position: absolute;
+	z-index: 5;
+	top: 0;
+	left: 50%;
+}
+
+#top_bg_item7 {
+	position: absolute;
+	z-index: 4;
+	top: 0;
+	left: 50%;
+}
+
+#top_bg_item8 {
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	left: 50%;
+}
+
+#top_bg_item9 {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 50%;
+}
+
+#top_bg_item10 {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 50%;
+}
+
+#airplane {
+	position: absolute;
+	left: -620px;
+	top: 1900px;
+}
+
+#balloon_cloud {
+	position: absolute;
+	left: -350px;
+	top: 2000px;
+}
+
+#balloon1 {
+	position: absolute;
+	left: 90px;
+	top: 2400px;
+}
+
+#balloon2 {
+	position: absolute;
+	left: -200px;
+	top: 2400px;
+}
+
+#balloon3 {
+	position: absolute;
+	left: 50px;
+	top: 2300px;
+}
+
+#balloon4 {
+	position: absolute;
+	left: 170px;
+	top: 2150px;
+}
+
+#bird1 {
+	position: absolute;
+	left: -400px;
+	top: 4000px;
+}
+
+#bird2 {
+	position: absolute;
+	left: -500px;
+	top: 2950px;
+}
+
+#bird3 {
+	position: absolute;
+	left: 210px;
+	top: 3800px;
+}
+
+#tree {
+	position: absolute;
+	left: -800px;
+	top: 2785px;
+}
+
+#balloons {
+	position: absolute;
+	left: 40px;
+	top: 3500px;
+}
+
+#top_article article h1 {
+	padding-bottom: 47px;
+}
+
+#top_article article .btn_more {
+	padding-top: 30px;
+}
+
+#top_article article .btn_more ul {
+	margin-top:-10px;
+}
+
+#top_article article .btn_more li {
+	float: left;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+#concept {
+	position: relative;
+	padding-top: 200px;
+}
+
+#concept p {
+	text-align: center;
+	padding-bottom: 125px;
+}
+
+#concept_logo {
+	padding-top:20px;
+}
+
+#news {
+	position: relative;
+	padding-top: 450px;
+
+}
+#news ul {
+	margin-top: -10px;
+}
+#news li {
+	padding-top: 10px;
+}
+
+#news li .news_item {
+	background: url('../img/news_list_bg.png') 0 0 no-repeat;
+	padding:2px 6px 1px 24px;
+}
+
+#news li .date {
+	padding-right: 15px;
+}
+
+#service {
+	position: relative;
+	padding-top: 600px;
+	padding-left: 50px;
+	width: 910px;
+	margin: 0 auto;
+}
+
+#service .btn_more ul {
+	width:484px;
+}
+
+#company {
+	position: relative;
+	padding-top: 500px;
+	padding-bottom: 250px;
+	height: 10em;
+}
+
+#company_contents {
+	position: absolute;
+	left: 505px;
+	width: 500px;
+}
+
+#company .btn_more ul {
+	width:481px;
+}
+
+
+#recruit {
+	position: relative;
+	padding: 600px 0 400px 40px;
+	width: 920px;
+	margin: 0 auto;
+	color: #ffffff;
+
+}

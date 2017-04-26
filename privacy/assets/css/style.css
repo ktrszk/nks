@@ -1,0 +1,35 @@
+@charset "utf-8";
+/**----------------------------------------------------------
+ *CSS information 
+ *
+ * file name	: extend.css
+ * style info	:  第二階層用CSS
+ -----------------------------------------------------------*/
+@import url("../../../common/css/import.css");
+@import url("../../../common/css/colorbox.css");
+/* ---------------------------------------------------------*/
+
+ #contents {
+	position: relative;
+	min-width: auto;
+	padding: 0 40px 40px;
+	background-image: none;
+	background-color: #ffffff;
+}
+
+#pagetitle {
+	padding:0 0 40px;
+}
+
+.body {
+	width: 100%;
+}
+
+dt {
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+dd {
+	padding-bottom: 30px;
+}

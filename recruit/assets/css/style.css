@@ -1,0 +1,58 @@
+@charset "utf-8";
+/**----------------------------------------------------------
+ *CSS information 
+ *
+ * file name	: extend.css
+ * style info	:  第二階層用CSS
+ -----------------------------------------------------------*/
+@import url("../../../common/css/import.css");
+@import url("../../../common/css/colorbox.css");
+
+/* -----------------------------------------------------------*/
+
+ #contents {
+	position: relative;
+	min-width: 960px;
+	padding-top: 112px;
+}
+
+#contents_rows {
+	background: url('../img/contents_bg.gif') 265px 0 repeat-y;
+}
+#sidearea {
+	float: left;
+	width: 265px;
+	padding-right: 50px;
+	padding-bottom: 60px;
+}
+
+#contents article {
+	float: left;
+	width: 645px;
+
+}
+
+#contents article h2 {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #076334;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#contents article section {
+	padding-bottom: 60px;
+}
+
+#contents article table {
+	width: 100%;
+}
+
+#contents article th {
+	font-weight: normal;
+	width: 150px;
+}
+
+#contents article th,#contents article td {
+	padding: 20px 0;
+	background: url('../img/table_bg.gif') left bottom repeat-x;
+}

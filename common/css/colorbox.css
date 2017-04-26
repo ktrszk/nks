@@ -1,0 +1,34 @@
+/*
+    ColorBox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of ColorBox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:#000;}
+#colorbox{}
+		#cboxWrapper{background:#fff;}
+    #cboxContent{margin-top:39px; overflow:visible;}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{background:#fff; padding:0px;}
+        /* #cboxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;} */
+        #cboxLoadingOverlay{background:#fff;}
+        #cboxTitle{position:absolute; top:-39px; left:0; color:#fff;}
+        #cboxCurrent{position:absolute; top:-39px; right:0px; text-indent:-9999px;}
+				#cboxClose{text-indent:-9999px; width:39px; height:39px; position:absolute; top:-39px; background:url(images/btn_close.png) no-repeat 0 0;}
+        #cboxClose{background-position:0px 0px; right:0;}
+        #cboxClose:hover{background-position:0px -39px;}

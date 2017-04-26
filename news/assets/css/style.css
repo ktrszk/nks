@@ -1,0 +1,173 @@
+@charset "utf-8";
+/**----------------------------------------------------------
+ *CSS information 
+ *
+ * file name	: extend.css
+ * style info	:  第二階層用CSS
+ -----------------------------------------------------------*/
+@import url("../../../common/css/import.css");
+@import url("../../../common/css/colorbox.css");
+/* ---------------------------------------------------------*/
+
+ #contents {
+	position: relative;
+	min-width: 960px;
+	padding-top: 72px;
+}
+
+#pagetitle {
+	padding: 40px 0;
+}
+
+#entry {
+	padding-bottom: 60px;
+}
+
+#entry div {
+	float: left;
+}
+
+#entry .image {
+	padding-right: 30px;
+}
+
+#entry .image p {
+	margin-bottom: 10px;
+}
+
+hgroup {
+	padding-bottom: 20px;
+}
+
+#entry .entry_title {
+	font-size: 1.5em;
+	color: #076334;
+	margin-top: -0.3em;
+}
+
+#entry .entry_date {
+	font-size: 1em;
+	color: #808080;
+	font-weight: normal;
+}
+
+#entry div.article {
+	width: 370px;
+}
+
+#entry div.article dl {
+	margin-top: 15px;
+	padding-top: 17px;
+	background: url(../img/article_bg.gif) repeat-x;
+}
+
+#entry div.article dl ul	{
+	margin-left: 10px;
+	padding-left: 5px;
+}
+
+#entry div.article dl ul li	{
+	list-style-image: url(../img/article_icon.gif);
+}
+
+#archives_area {
+	background: #076334 url('../../../common/img/green_bg.gif');
+}
+
+#archives {
+	position: relative;
+	padding: 30px 0 27px;
+}
+
+#archive_title {
+	position: absolute;
+	top: -10px;
+}
+
+#archives article ul {
+	margin-left: -30px;
+}
+
+#archives article li {
+	float: left;
+	width: 300px;
+	padding-top: 20px;
+	padding-left: 30px;
+	color: #ffffff;
+}
+
+#archives article li div {
+	float: left;	
+}
+
+#archives article .entry_thumbnail {
+	border: 1px solid #ffffff;
+	padding: 2px;
+}
+
+#archives article .entry_thumbnail p {
+	height: 64px;
+	overflow: hidden;
+}
+
+#archives article .entry_date {
+	font-size: 0.9em;
+	line-height: 1em;
+	width: 190px;
+	padding-left: 10px;
+	padding-bottom: 6px;
+}
+
+#archives article .entry_title {
+	width: 190px;
+	padding-left: 10px;
+	line-height: 1.5em;
+}
+
+#archives article a {
+	color: #ffffff;
+	text-decoration:none;
+}
+
+#archives article a:hover {
+	color: #ffffff;
+	text-decoration:underline;
+}
+
+#pagenavi{
+	text-align:center;
+	padding-top: 37px;
+}
+#pagenavi li {
+	display:inline-block;
+	/display:inline;
+	/zoom:1;
+	width: 1.7em;
+	height: 1.7em;
+	text-align:center;
+	border: 1px solid #ffffff;
+	margin: 0 3px;
+}
+
+#pagenavi li a {
+	color: #ffffff;
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration:none;
+	padding-bottom:0.2em;
+}
+#pagenavi li a:hover {
+	color: #076334;
+	background: #ffffff;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration:none;
+}
+
+#pagenavi li.current {
+	color: #076334;
+	background: #ffffff;
+}

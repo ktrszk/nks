@@ -1,0 +1,298 @@
+@charset "utf-8";
+/**----------------------------------------------------------
+ *CSS information 
+ *
+ * file name	: extend.css
+ * style info	:  第二階層用CSS
+ -----------------------------------------------------------*/
+@import url("../../../common/css/import.css");
+@import url("../../../common/css/colorbox.css");
+/* ---------------------------------------------------------*/
+
+#header {
+	border-bottom:0;
+}
+
+ #contents {
+	position: relative;
+	min-width: 960px;
+	padding-top: 104px;
+}
+
+#subnavi {
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+	top: 70px;
+	left: 0;
+}
+
+#subnavi .body {
+	width:642px;
+}
+
+#subnavi li {
+	float: left;
+}
+
+#contents section {
+	clear: both;
+	height: 600px;
+	overflow: hidden;
+	position: relative;
+}
+
+#contents section .body {
+	position: relative;
+}
+
+.anchor_pos {
+	position: absolute;
+	top:-104px;
+}
+
+.slidearea {
+	width: 960px;
+	height: 360px;
+	overflow: hidden;
+	position: relative;
+}
+
+.slidearea_inner {
+	position: absolute;
+	width: 9999px;
+} 
+
+.slidepage {
+	float:left;
+	width: 960px;
+	padding-right:60px;
+}
+
+
+#building_management_area {
+	background: #386ca8 url('../img/building_management_bg.jpg') no-repeat 50% 0;
+}
+
+#building_management_area .body h1 {
+	padding:79px 0 38px;
+}
+
+#building_management_area .body div {
+	position: absolute;
+	left: -17px;
+	top: 318px;
+	width: 1004px;
+}
+
+#building_management_area .body li {
+	float: left;
+	padding-right: 10px;
+}
+
+section#building_management_more_area {
+	height: 535px;
+	background: #1b7a09 url('../img/light_green_bg.gif') repeat-x;
+}
+
+#building_management_more_navi {
+	width: 924px;
+	margin-left: -462px;
+	position: absolute;
+	left: 50%;
+	top: 650px;
+	z-index: 10;
+}
+
+#building_management_more_navi li {
+	float: left;
+	padding:0 21px;
+}
+
+.building_management_more {
+	color: #ffffff;
+	font-size: 90%;
+}
+
+.building_management_more h2 {
+	padding: 95px 0 35px;
+	text-align: center;
+}
+
+.building_management_more ul {
+	margin-left: -26px;
+	width:986px;
+}
+
+.building_management_more li {
+	float: left;
+	padding-left: 26px;
+	width:220px;
+}
+
+.building_management_more dl,.building_management_more dt,.building_management_more dd, {
+	width:220px;
+}
+
+.building_management_more dt {
+	padding-bottom: 5px;
+}
+
+#building_management_more3_slide_btn_left {
+	position: absolute;
+	left: -100px;
+	top: 240px;
+}
+
+#building_management_more3_slide_btn_right {
+	position: absolute;
+	left: 1007px;
+	top: 240px;
+}
+
+#building_management_more6_slide_btn_left {
+	position: absolute;
+	left: -100px;
+	top: 240px;
+}
+
+#building_management_more6_slide_btn_right {
+	position: absolute;
+	left: 1007px;
+	top: 240px;
+}
+
+#designated_manager_area {
+	background: #000000 url('../img/designated_manager_bg.jpg') no-repeat 50% 0;
+}
+
+#designated_manager_area .body {
+	color: #ffffff;
+}
+
+#designated_manager_area .body h1 {
+	padding: 70px 0 46px;
+}
+#designated_manager_area .body h2 {
+	padding-bottom: 40px;
+}
+
+section#designated_manager_more_area {
+	height: 660px;
+	background: #076334 url('../img/service_green_bg.png') repeat-x 0 bottom;
+	overflow: visible;
+}
+
+#designated_manager_more_area h1 {
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	margin-left: -480px;
+	z-index: 10;
+}
+
+#designated_manager_more_area .slidearea {
+	height: 660px;
+}
+
+#designated_manager_more_area ul {
+	margin:0 -14px;
+}
+
+#designated_manager_more_area li {
+	float: left;
+	width: 218px;
+	height: 260px;
+	padding: 40px 14px 0;
+	color: #ffffff;
+	line-height:1.5em;
+}
+
+#designated_manager_more_area li h2 {
+	padding:2px 0 4px;
+}
+
+#designated_manager_more_area li a {
+	color: #ffffff;
+}
+
+#designated_manager_more_slide_btn_left {
+	position: absolute;
+	left: -100px;
+	top: 300px;
+}
+
+#designated_manager_more_slide_btn_right {
+	position: absolute;
+	left: 1007px;
+	top: 300px;
+}
+
+section#enegy_conservation_area {
+	background: #000000 url('../img/enegy_conservation_bg.jpg') no-repeat 50% 0;
+	height: 535px;
+	color: #ffffff;
+}
+
+#enegy_conservation_area .body h1 {
+	padding: 59px 0 38px;
+}
+#enegy_conservation_area .body h2 {
+	padding-bottom: 45px;
+}
+
+section#enegy_conservation_more_area {
+	background: #076334 url('../img/service_green_bg.png') repeat-x 0 bottom;
+	overflow: visible;
+}
+
+
+#enegy_conservation_more_area h1 {
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	margin-left: -480px;
+	z-index: 10;
+}
+
+#enegy_conservation_more_area .body ul {
+	margin-left:-36px;
+}
+
+#enegy_conservation_more_area .body li {
+	float: left;
+	padding-top: 40px;
+	padding-left: 36px;
+	width: 462px;
+}
+
+#enegy_conservation_more_area .body h2 {
+	padding-bottom: 13px;
+}
+
+#enegy_conservation_more_area .body p {
+	color: #ffffff;
+	padding-top: 10px;
+}
+
+div.note {
+	font-size: 85%;
+	line-height: 1.5em;
+	color: #cbcbcb;
+}
+
+div.note a {
+	color: #ffffff;
+}
+
+section#management_products_area {
+	background: #000000 url('../img/management_products_bg.jpg') no-repeat 50% 0;
+}
+
+
+#management_products_area .body h1 {
+	padding: 79px 0 37px;
+}
+#management_products_area .body h2 {
+	padding-bottom: 45px;
+}

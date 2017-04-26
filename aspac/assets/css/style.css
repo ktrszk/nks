@@ -1,0 +1,242 @@
+@charset "utf-8";
+/**----------------------------------------------------------
+ *CSS information 
+ *
+ * file name	: extend.css
+ * style info	:  第二階層用CSS
+ -----------------------------------------------------------*/
+@import url("../../../common/css/import.css");
+/* ---------------------------------------------------------*/
+
+#header {
+	height: 43px;
+	border-bottom:0;
+	background:#076334 url('../img/header_bg.jpg') repeat-x;	
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	left: 0;
+}
+
+#gnavi {
+	float: right;
+}
+
+ #contents {
+	position: relative;
+	min-width: 960px;
+	padding-top: 43px;
+}
+
+#contents section {
+	clear: both;
+	overflow: hidden;
+	position: relative;
+}
+
+#contents section .body {
+	position: relative;
+}
+
+.anchor_pos {
+	position: absolute;
+	top:-43px;
+}
+
+.slidearea {
+	width: 960px;
+	height: 750px;
+	overflow: hidden;
+	position: relative;
+}
+
+.slidearea_inner {
+	position: absolute;
+	width: 9999px;
+} 
+
+.slidepage {
+	float:left;
+	width: 960px;
+	padding-right:60px;
+}
+
+.slide_btn_left {
+	position: absolute;
+	left: -30px;
+	top: 350px;
+	visibility: hidden;
+}
+
+.slide_btn_right {
+	position: absolute;
+	left: 960px;
+	top: 350px;
+	visibility: hidden;
+}
+
+#order_made_area {
+	height: 750px;
+	background: #f2e7d2 url('../img/order_made_bg.jpg') no-repeat 50% 0;
+}
+
+#order_made_area .body h1 {
+	position: absolute;
+	left: 54px;
+	top: 113px;
+}
+
+#order_made_area .body h2 {
+	position: absolute;
+	left: 54px;
+	top: 205px;
+}
+
+#order_made_area .body p {
+	position: absolute;
+	left: 54px;
+	top: 280px;
+}
+
+
+#try_area {
+	height: 810px;
+	background: #aa683e url('../img/try_bg.jpg') no-repeat 50% 0;
+	color: #ffffff;
+}
+
+#try_area .body h1 {
+	position: absolute;
+	left: 458px;
+	top: 218px;
+}
+
+#try_area .body h2 {
+	position: absolute;
+	left: 458px;
+	top: 290px;
+}
+
+#try_area .body p {
+	position: absolute;
+	left: 458px;
+	top: 345px;
+}
+
+
+#recommend_area {
+	height: 750px;
+	background: #000000;
+	color: #ffffff;
+}
+
+#recommend_area .body h1 {
+	position: absolute;
+	left: 320px;
+	top: 42px;
+	z-index: 10;
+}
+
+#recommend_area .body h2 {
+	position: absolute;
+	left: 420px;
+	top: 110px;
+	z-index: 11;
+}
+
+.slidepage {
+	position: relative;
+	height: 750px;
+	background: #000000;
+}
+
+#recommend_area .slidepage h3 {
+	position:absolute;
+	left: 587px;
+	top: 251px;
+}
+
+#recommend_area .slidepage p {
+	position:absolute;
+	left: 590px;
+	top: 330px;
+	width: 315px;
+}
+
+#recommend_slidepage1 {
+	background: url('../img/recommend_item1_bg.jpg') no-repeat
+}
+
+#recommend_slidepage2 {
+	background: url('../img/recommend_item2_bg.jpg') no-repeat
+}
+
+#recommend_slidepage3 {
+	background: url('../img/recommend_item3_bg.jpg') no-repeat
+}
+
+#recommend_slidepage4 {
+	background: url('../img/recommend_item4_bg.jpg') no-repeat
+}
+
+#recommend_slidepage5 {
+	background: url('../img/recommend_item5_bg.jpg') no-repeat
+}
+
+#recommend_slidepage6 {
+	background: url('../img/recommend_item6_bg.jpg') no-repeat
+}
+
+#contact_area {
+	height: 720px;
+	background: #b2d9f8 url('../img/contact_bg.jpg') no-repeat 50% 0;
+}
+
+#contact_area .body h1 {
+	position: absolute;
+	left: 27x;
+	top: 360px;
+}
+
+#contact_area .body h2 {
+	position: absolute;
+	left: 27x;
+	top: 432px;
+}
+
+#contact_area .body p {
+	position: absolute;
+	left: 27x;
+	top: 490px;
+}
+
+
+#company_area {
+	height: 620px;
+	background: #076334 url('../../../common/img/green_bg.gif');
+	color: #ffffff;
+}
+
+#company_area .body h1 {
+	position: absolute;
+	left: 0x;
+	top: 54px;
+}
+
+#company_area .body div {
+	padding-top: 150px;
+}
+
+#company_area .body table {
+	float: left;
+}
+
+#company_area .body th {
+	width: 120px;
+	padding-bottom: 20px;
+}
+
+#company_area .body td {
+	width: 360px;
+	padding-bottom: 20px;
+}

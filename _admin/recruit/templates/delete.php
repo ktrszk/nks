@@ -1,0 +1,112 @@
+<?php
+if (empty($LoginObj)) header("Location:/");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<?php require_once($DIR_TEMPLATE."meta.php"); ?>
+<script type="text/javascript" src="../common/js/edit.js"></script>
+
+<link href="common/css/edit.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="col2">
+
+<?php require_once($DIR_TEMPLATE."header.php"); ?>
+
+<div id="main">
+	<?php require_once("sidebar.php"); ?>
+	
+	<div id="contents">
+		<div id="title">
+			<h1><?php echo $PAGE_MENU; ?></h1>
+		</div>
+		
+		<form name="editform" method="post" action="" onsubmit="return confirm('<?php echo $DELETE_CONFIRM; ?>')">
+			<div class="content">
+				<h2><?php echo $PAGE_TITLE; ?></h2>
+				<div class="inner">
+					<?php if (empty($notfound)) : ?>
+					<?php if (!empty($error)) : ?><p class="error"><?php echo $error; ?></p><?php endif; ?>
+					
+					<p class="warning">下記の内容を削除してよろしければ「データ削除」ボタンをクリックしてください。</p>
+					
+					<div id="edit">
+						<div class="edit end">
+							<h3><a href="javascript:toggleEdit('1')">採用情報</a></h3>
+							<div id="edit1">
+								<table>
+									<tr>
+										<th style="width:150px;">タイトル</th>
+										<td><?php echo $title; ?></td>
+									</tr>
+									<tr>
+										<th>エリア</th>
+										<td><?php echo master_detail_param($REC_AREA, $area); ?></td>
+									</tr>
+									<tr>
+										<th>募集要項</th>
+										<td><?php
+										$fcat = 1;
+										if ($item_num > 0) {
+											for ($i=0; $i<$item_num; $i++) {
+												if ($_POST['item_exist'.$i] == "1") {
+													$cnt = $i + 1;
+										?>
+										<div class="titem">
+											【<?php echo $cnt; ?>】
+											<p>項目名 ：<?php echo $_POST['title'.$i]; ?></p>
+										<?php if ($_POST['type'.$i] == '1') : ?>
+											<p class="spacer">内容</p>
+											<?php echo convert_to_html($_POST['content'.$i.'_1']); ?>
+										<?php endif; ?>
+											<p class="spacer">並び順 ：<?php echo $_POST['sort'.$i]; ?></p>
+										</div>
+										<?php
+												}
+											}
+										}
+										?></td>
+									</tr>
+									<tr>
+										<th>並び順</th>
+										<td><?php echo $sort; ?></td>
+									</tr>
+									<tr>
+										<th>公開日時</th>
+										<td><?php echo $disp_year.' 年 '.$disp_month.' 月 '.$disp_day.' 日　'.$disp_hour.' 時 '.$disp_minute.' 分'; ?></td>
+									</tr>
+									<tr>
+										<th>公開設定</th>
+										<td><?php echo master_detail_param($CMN_DISPFLAG, $disp_flag); ?></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<?php else : ?>
+					<p><?php echo $notfound; ?></p>
+					<?php endif; ?>
+				</div>
+			</div>
+						
+			<div class="control">
+				<ul>
+					<?php if (empty($notfound)) : ?>
+					<li><input type="image" name="imageField" src="../common/images/delete_bt001.jpg" /></li>
+					<li><a href="javascript:history.back()"><img src="../common/images/edit_bt004.jpg" alt="入力画面に戻る" width="200" height="40" /></a></li>
+					<?php else : ?>
+					<li><a href="list.php"><img src="../common/images/edit_bt005.jpg" alt="一覧に戻る" width="200" height="40" /></a></li>
+					<?php endif; ?>
+				</ul>
+				<input type="hidden" name="cmd" value="comp" />
+			</div>
+		</form>
+	</div>
+</div>
+
+<?php require_once($DIR_TEMPLATE."footer.php"); ?>
+
+</body>
+</html>

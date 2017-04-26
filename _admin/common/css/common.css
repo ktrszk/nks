@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+body	{
+	color: #595757;
+	font: 62.5%/1.5 "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+a	{
+	color: #4CBCF0;
+}
+
+a:hover	{
+	text-decoration: none;
+}
+
+/* ====================================================================================================
+   レイアウト
+==================================================================================================== */
+.small	{ font-size: 10px; }
+.spacer	{ padding-top: 8px; }
+
+.left	{ float: left; }
+.right	{ float: right; }
+
+.acenter	{ text-align: center; }
+.aright	{ text-align: right; }
+
+.vtop	{ vertical-align: top; }
+.vmiddle	{ vertical-align: middle; }
+
+/* ====================================================================================================
+   フォーム
+==================================================================================================== */
+.txt	{
+	padding: 3px;
+	border: 1px solid #C9CACA;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+.sel	{
+	padding: 2px;
+	border: 1px solid #C9CACA;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+.chk	{
+	vertical-align: text-top;
+	#vertical-align: middle;
+}
+
+.btn	{
+	padding: 3px 10px;
+}
+
+/* ====================================================================================================
+   フォーム制御
+==================================================================================================== */
+.require	{ color: #FF0000; }
+
+.success	{
+	padding: 10px 10px 10px 40px;
+	background: #D6F0FB url(../images/success_ic001.jpg) no-repeat 10px 50%;
+	border: 1px solid #66C6F2;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+
+.error	{
+	padding: 10px 10px 10px 40px;
+	background: #F9E7E9 url(../images/error_ic001.jpg) no-repeat 10px 50%;
+	border: 1px solid #E79EA7;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+
+.warning	{
+	padding: 10px 10px 10px 40px;
+	background: #FEF3DD url(../images/warning_ic001.jpg) no-repeat 9px 50%;
+	border: 1px solid #FBD381;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+
+/* ====================================================================================================
+   クリアフィックス
+==================================================================================================== */
+.inner:after	{
+	content: ".";
+	display: block;
+	clear: both; 
+	height: 0;
+	visibility: hidden;
+}
+
+.inner	{
+	display: block;
+	#display: inline-block;
+}

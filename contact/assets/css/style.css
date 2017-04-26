@@ -1,0 +1,123 @@
+@charset "utf-8";
+/**----------------------------------------------------------
+ *CSS information 
+ *
+ * file name	: extend.css
+ * style info	:  第二階層用CSS
+ -----------------------------------------------------------*/
+@import url("../../../common/css/import.css");
+
+/* ---------------------------------------------------------*/
+em {
+	color:#ff0000;
+}
+
+.sample {
+	font-size: 87.5%;
+}
+ #contents {
+	position: relative;
+	min-width: 898px;
+	width: 898px;
+	padding:0 19px 39px 39px;
+	margin:0;
+	background: transparent;
+	text-align: left;
+}
+
+.body {
+	width: 898px;
+	margin:0;	
+}
+
+#pagetitle {
+	padding: 0 0 40px;
+}
+#pagetitle h1 {
+	font-weight: normal;
+}
+
+#pagetitle img {
+	vertical-align: middle;
+}
+table {
+	float: left;
+	width: 380px;
+}
+th {
+	vertical-align: top;
+	font-weight: normal;
+	width: 115px;
+}
+
+td {
+	color:#676767;
+	padding-bottom: 8px;
+}
+
+td.lastrow {
+	padding-bottom: 0;
+}
+
+dl {
+	float:left;
+	width: 130px;
+}
+
+dt {
+	float:left;
+	width: 19px;
+	padding-top: 2px;
+}
+
+dd {
+	float:left;
+	width: 111px;
+}
+
+input, select, textarea {
+	border: 1px solid #cdcdcd;
+	padding: 1px;
+}
+
+.box65 {
+	width: 65px;
+}
+
+.box90 {
+	width: 90px;
+}
+
+.box240 {
+	width: 240px;
+}
+
+#form_right {
+	float: left;
+	padding-left: 40px;
+}
+
+#form_right p {
+	padding-bottom: 5px;
+}
+
+#form_right_input {
+	color:#676767;
+}
+
+#form_right textarea {
+	width: 459px;
+	height: 242px;
+	resize: none;
+}
+
+#form_btn {
+	text-align: right;
+	padding: 0;
+}
+
+#form_btn input {
+	margin-left: 6px;
+	padding: 0;
+	border: 0;
+}

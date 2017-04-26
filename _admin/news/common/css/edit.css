@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+#image .fitem,
+#pdf .fitem	{
+	float: left;
+	margin-right: 25px;
+}
+

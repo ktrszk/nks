@@ -1,0 +1,81 @@
+@charset "utf-8";
+/**----------------------------------------------------------
+ *CSS information 
+ *
+ * file name	: extend.css
+ * style info	:  第三階層用CSS
+ -----------------------------------------------------------*/
+@import url("../../../../common/css/import.css");
+@import url("../../../../common/css/colorbox.css");
+/* ---------------------------------------------------------*/
+
+ #contents {
+	position: relative;
+	min-width: auto;
+	padding: 0 40px 40px;
+	background-image: none;
+	background-color: #ffffff;
+}
+
+#pagetitle {
+	padding:0 0 40px;
+}
+
+.body {
+	width: 100%;
+}
+
+
+#outline_table th, #outline_table td {
+	padding: 15px 0 25px;
+	text-align: left;
+	vertical-align: top;
+	background: transparent url('../img/outline_td_bg.gif') repeat-x top left;
+}
+
+#outline_table th {
+	width: 155px;
+	font-weight: bold;
+	background: transparent url('../img/outline_th_bg.gif') repeat-x top left;
+}
+
+#outline_table table th, #outline_table table td {
+	padding-top: 0;
+	padding-bottom: 5px;
+	background: url(none);
+}
+
+#outline_table table th {
+	width: 130px;
+	font-weight: normal;
+}
+
+#outline_table dl {
+	clear:both;
+} 
+#outline_table dt, #outline_table dd {
+	float: left;
+}
+
+#outline_table #history {
+	margin-left: -80px;
+}
+
+#outline_table #history th {
+	width: 80px;
+}
+
+#history .history_era {
+	width: 25px;
+}
+
+#history .history_year {
+	width: 30px;
+	text-align: right;
+}
+
+#history .history_month {
+	width: 30px;
+	text-align: right;
+	padding-right: 20px;
+}
