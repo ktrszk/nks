@@ -95,7 +95,8 @@
 				{"background-color":"#1b7a09", "background-image":"url('assets/img/light_green_bg.gif')"},
 				{"background-color":"#770000", "background-image":"url('assets/img/red_bg.gif')"},
 				{"background-color":"#062666", "background-image":"url('assets/img/blue_bg.gif')"},
-				{"background-color":"#c36508", "background-image":"url('assets/img/orange_bg.gif')"}
+				{"background-color":"#c36508", "background-image":"url('assets/img/orange_bg.gif')"},
+				{"background-color":"#159fff", "background-image":"url('assets/img/lightblue_bg.gif')"}
 			]
 			if(i == id){
 				$(this).css("display","block");

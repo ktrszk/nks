@@ -80,9 +80,9 @@
 
 #building_management_area .body div {
 	position: absolute;
-	left: -17px;
+	left: -140px;
 	top: 318px;
-	width: 1004px;
+	width: 1280px;
 }
 
 #building_management_area .body li {
@@ -96,8 +96,8 @@ section#building_management_more_area {
 }
 
 #building_management_more_navi {
-	width: 924px;
-	margin-left: -462px;
+	width: 1100px;
+	margin-left: -540px;
 	position: absolute;
 	left: 50%;
 	top: 650px;
